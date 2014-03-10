@@ -316,7 +316,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd node/\n./configure --prefix=./nodefs\nmake\nmake install";
+			shellScript = "cd node/\n./configure --prefix=./nodefs\nmake -j 8\nmake -j 8 install";
 		};
 /* End PBXShellScriptBuildPhase section */
 
